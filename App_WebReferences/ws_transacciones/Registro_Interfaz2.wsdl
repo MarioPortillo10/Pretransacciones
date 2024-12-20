@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/page/registro_interfaz2" targetNamespace="urn:microsoft-dynamics-schemas/page/registro_interfaz2" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/page/registro_interfaz2" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="tipocarga">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_x0030_" />
+          <xsd:enumeration value="_x0031_" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Status">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_x0030_" />
+          <xsd:enumeration value="_x0031_" />
+          <xsd:enumeration value="_x0032_" />
+          <xsd:enumeration value="_x0033_" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="Registro_Interfaz2">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="transaccion" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ticket" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="fechaentra" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="horaentra" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="fechasale" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="horasale" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="tiempo" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="tarjetano" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="bascula" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="bascula2" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="actividad" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_actividad" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="producto" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_producto" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="cliente" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_cliente" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="almacen" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_almacen" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="vehiculo" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codbuque" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="buque" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="categoria" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesoin" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesoout" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesoneto" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="motorista" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_motorista" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="transportista" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_transportista" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="envioingenio" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="envioalmapac" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="viajecepa" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="boletacepa" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesocepa" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="tipocarga" type="tns:tipocarga" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="observaciones" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="usuario" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="semaforo" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="semaforo2" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="semaforo3" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="semaforo4" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="estatus" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="salida" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codfactor" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="factor2" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="factor3" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesocliente" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="equivalencia" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ticketgranel" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ticketensacado" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="almacen2" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="desc_almacen2" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ticketlimpieza" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codigounidad" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ordenretiro" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="tipocamionr" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesoreal" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="usuariosale" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="usuariomod" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="registro" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="dobleticket" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ticketenano" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="disponible" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="fechabarco" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="fechabarco2" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesoinv1" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pesoinv2" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="remision" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="licencia" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="mercancia" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="contenedor" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="bultos" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="documentos" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="fechaTemp" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="temperatura" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="basculaEntrada" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Status" type="tns:Status" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Liquidacion" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codbuque_2" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codbuque_3" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codbuque_4" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="codbuque_5" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Qty_Relased_Availability" type="xsd:decimal" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Registro_Interfaz2_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="Registro_Interfaz2_Fields">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="id" />
+          <xsd:enumeration value="transaccion" />
+          <xsd:enumeration value="ticket" />
+          <xsd:enumeration value="fechaentra" />
+          <xsd:enumeration value="horaentra" />
+          <xsd:enumeration value="fechasale" />
+          <xsd:enumeration value="horasale" />
+          <xsd:enumeration value="tiempo" />
+          <xsd:enumeration value="tarjetano" />
+          <xsd:enumeration value="bascula" />
+          <xsd:enumeration value="bascula2" />
+          <xsd:enumeration value="actividad" />
+          <xsd:enumeration value="desc_actividad" />
+          <xsd:enumeration value="producto" />
+          <xsd:enumeration value="desc_producto" />
+          <xsd:enumeration value="cliente" />
+          <xsd:enumeration value="desc_cliente" />
+          <xsd:enumeration value="almacen" />
+          <xsd:enumeration value="desc_almacen" />
+          <xsd:enumeration value="vehiculo" />
+          <xsd:enumeration value="codbuque" />
+          <xsd:enumeration value="buque" />
+          <xsd:enumeration value="categoria" />
+          <xsd:enumeration value="pesoin" />
+          <xsd:enumeration value="pesoout" />
+          <xsd:enumeration value="pesoneto" />
+          <xsd:enumeration value="motorista" />
+          <xsd:enumeration value="desc_motorista" />
+          <xsd:enumeration value="transportista" />
+          <xsd:enumeration value="desc_transportista" />
+          <xsd:enumeration value="envioingenio" />
+          <xsd:enumeration value="envioalmapac" />
+          <xsd:enumeration value="viajecepa" />
+          <xsd:enumeration value="boletacepa" />
+          <xsd:enumeration value="pesocepa" />
+          <xsd:enumeration value="tipocarga" />
+          <xsd:enumeration value="observaciones" />
+          <xsd:enumeration value="usuario" />
+          <xsd:enumeration value="semaforo" />
+          <xsd:enumeration value="semaforo2" />
+          <xsd:enumeration value="semaforo3" />
+          <xsd:enumeration value="semaforo4" />
+          <xsd:enumeration value="estatus" />
+          <xsd:enumeration value="salida" />
+          <xsd:enumeration value="codfactor" />
+          <xsd:enumeration value="factor2" />
+          <xsd:enumeration value="factor3" />
+          <xsd:enumeration value="pesocliente" />
+          <xsd:enumeration value="equivalencia" />
+          <xsd:enumeration value="ticketgranel" />
+          <xsd:enumeration value="ticketensacado" />
+          <xsd:enumeration value="almacen2" />
+          <xsd:enumeration value="desc_almacen2" />
+          <xsd:enumeration value="ticketlimpieza" />
+          <xsd:enumeration value="codigounidad" />
+          <xsd:enumeration value="ordenretiro" />
+          <xsd:enumeration value="tipocamionr" />
+          <xsd:enumeration value="pesoreal" />
+          <xsd:enumeration value="usuariosale" />
+          <xsd:enumeration value="usuariomod" />
+          <xsd:enumeration value="registro" />
+          <xsd:enumeration value="dobleticket" />
+          <xsd:enumeration value="ticketenano" />
+          <xsd:enumeration value="disponible" />
+          <xsd:enumeration value="fechabarco" />
+          <xsd:enumeration value="fechabarco2" />
+          <xsd:enumeration value="pesoinv1" />
+          <xsd:enumeration value="pesoinv2" />
+          <xsd:enumeration value="remision" />
+          <xsd:enumeration value="licencia" />
+          <xsd:enumeration value="mercancia" />
+          <xsd:enumeration value="contenedor" />
+          <xsd:enumeration value="bultos" />
+          <xsd:enumeration value="documentos" />
+          <xsd:enumeration value="fechaTemp" />
+          <xsd:enumeration value="temperatura" />
+          <xsd:enumeration value="basculaEntrada" />
+          <xsd:enumeration value="Status" />
+          <xsd:enumeration value="Liquidacion" />
+          <xsd:enumeration value="codbuque_2" />
+          <xsd:enumeration value="codbuque_3" />
+          <xsd:enumeration value="codbuque_4" />
+          <xsd:enumeration value="codbuque_5" />
+          <xsd:enumeration value="Qty_Relased_Availability" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="Registro_Interfaz2_Filter">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Field" type="tns:Registro_Interfaz2_Fields" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Criteria" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Read">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="id" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Read_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="recId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="unbounded" name="filter" type="tns:Registro_Interfaz2_Filter" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="bookmarkKey" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="setSize" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="ReadMultiple_Result" type="tns:Registro_Interfaz2_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="IsUpdated_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="GetRecIdFromKey_Result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2_List" type="tns:Registro_Interfaz2_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2_List" type="tns:Registro_Interfaz2_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2" type="tns:Registro_Interfaz2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2_List" type="tns:Registro_Interfaz2_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Registro_Interfaz2_List" type="tns:Registro_Interfaz2_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="Read">
+    <part name="parameters" element="tns:Read" />
+  </message>
+  <message name="Read_Result">
+    <part name="parameters" element="tns:Read_Result" />
+  </message>
+  <message name="ReadByRecId">
+    <part name="parameters" element="tns:ReadByRecId" />
+  </message>
+  <message name="ReadByRecId_Result">
+    <part name="parameters" element="tns:ReadByRecId_Result" />
+  </message>
+  <message name="ReadMultiple">
+    <part name="parameters" element="tns:ReadMultiple" />
+  </message>
+  <message name="ReadMultiple_Result">
+    <part name="parameters" element="tns:ReadMultiple_Result" />
+  </message>
+  <message name="IsUpdated">
+    <part name="parameters" element="tns:IsUpdated" />
+  </message>
+  <message name="IsUpdated_Result">
+    <part name="parameters" element="tns:IsUpdated_Result" />
+  </message>
+  <message name="GetRecIdFromKey">
+    <part name="parameters" element="tns:GetRecIdFromKey" />
+  </message>
+  <message name="GetRecIdFromKey_Result">
+    <part name="parameters" element="tns:GetRecIdFromKey_Result" />
+  </message>
+  <message name="Create">
+    <part name="parameters" element="tns:Create" />
+  </message>
+  <message name="Create_Result">
+    <part name="parameters" element="tns:Create_Result" />
+  </message>
+  <message name="CreateMultiple">
+    <part name="parameters" element="tns:CreateMultiple" />
+  </message>
+  <message name="CreateMultiple_Result">
+    <part name="parameters" element="tns:CreateMultiple_Result" />
+  </message>
+  <message name="Update">
+    <part name="parameters" element="tns:Update" />
+  </message>
+  <message name="Update_Result">
+    <part name="parameters" element="tns:Update_Result" />
+  </message>
+  <message name="UpdateMultiple">
+    <part name="parameters" element="tns:UpdateMultiple" />
+  </message>
+  <message name="UpdateMultiple_Result">
+    <part name="parameters" element="tns:UpdateMultiple_Result" />
+  </message>
+  <portType name="Registro_Interfaz2_Port">
+    <operation name="Read">
+      <input name="Read" message="tns:Read" />
+      <output name="Read_Result" message="tns:Read_Result" />
+    </operation>
+    <operation name="ReadByRecId">
+      <input name="ReadByRecId" message="tns:ReadByRecId" />
+      <output name="ReadByRecId_Result" message="tns:ReadByRecId_Result" />
+    </operation>
+    <operation name="ReadMultiple">
+      <input name="ReadMultiple" message="tns:ReadMultiple" />
+      <output name="ReadMultiple_Result" message="tns:ReadMultiple_Result" />
+    </operation>
+    <operation name="IsUpdated">
+      <input name="IsUpdated" message="tns:IsUpdated" />
+      <output name="IsUpdated_Result" message="tns:IsUpdated_Result" />
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <input name="GetRecIdFromKey" message="tns:GetRecIdFromKey" />
+      <output name="GetRecIdFromKey_Result" message="tns:GetRecIdFromKey_Result" />
+    </operation>
+    <operation name="Create">
+      <input name="Create" message="tns:Create" />
+      <output name="Create_Result" message="tns:Create_Result" />
+    </operation>
+    <operation name="CreateMultiple">
+      <input name="CreateMultiple" message="tns:CreateMultiple" />
+      <output name="CreateMultiple_Result" message="tns:CreateMultiple_Result" />
+    </operation>
+    <operation name="Update">
+      <input name="Update" message="tns:Update" />
+      <output name="Update_Result" message="tns:Update_Result" />
+    </operation>
+    <operation name="UpdateMultiple">
+      <input name="UpdateMultiple" message="tns:UpdateMultiple" />
+      <output name="UpdateMultiple_Result" message="tns:UpdateMultiple_Result" />
+    </operation>
+  </portType>
+  <binding name="Registro_Interfaz2_Binding" type="tns:Registro_Interfaz2_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="Read">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:Read" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Read">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Read_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadByRecId">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:ReadByRecId" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadByRecId">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadByRecId_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:ReadMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="IsUpdated">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:IsUpdated" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="IsUpdated">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="IsUpdated_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:GetRecIdFromKey" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRecIdFromKey">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRecIdFromKey_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Create">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:Create" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Create">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Create_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:CreateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Update">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:Update" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Update">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Update_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/registro_interfaz2:UpdateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Registro_Interfaz2_Service">
+    <port name="Registro_Interfaz2_Port" binding="tns:Registro_Interfaz2_Binding">
+      <address location="http://apsvrnav01.almapac.com:7047/DynamicsNAV90/WS/ARDUINOS/Page/Registro_Interfaz2" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

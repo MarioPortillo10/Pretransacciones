@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://apsvrnav01.almapac.com:7047/DynamicsNAV90/WS/ARDUINOS/Page/Registro_Interfaz2" filename="Registro_Interfaz2.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

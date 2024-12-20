@@ -1,0 +1,15 @@
+C:\Users\Rodrigo Valladares\documents\visual studio 2012\Projects\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo Valladares\documents\visual studio 2012\Projects\disa_ws_01\disa_ws_01\bin\disa_ws_01.dll
+C:\Users\Rodrigo Valladares\documents\visual studio 2012\Projects\disa_ws_01\disa_ws_01\bin\disa_ws_01.pdb
+C:\Users\Rodrigo Valladares\documents\visual studio 2012\Projects\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.dll
+C:\Users\Rodrigo Valladares\documents\visual studio 2012\Projects\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.pdb
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\bin\disa_ws_01.dll.config
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\bin\disa_ws_01.dll
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\bin\disa_ws_01.pdb
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.csprojAssemblyReference.cache
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.csproj.CoreCompileInputs.cache
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.dll
+F:\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.pdb
+C:\Users\Alfredo Hernandez\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.csprojResolveAssemblyReference.cache
+C:\Users\Alfredo Hernandez\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.dll
+C:\Users\Alfredo Hernandez\Dropbox\COMMON\DISA\disa_ws_01\disa_ws_01\obj\Debug\disa_ws_01.pdb
